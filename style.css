@@ -9,7 +9,43 @@ body {
     background-color: #fff;
     color: #000;
     font-family: 'Courier New', Courier, monospace;
+    
+
+    
+    
+/* 1. Poppins - Friendly & Modern */
+/* font-family: 'Poppins', sans-serif; */
+
+/* 2. Inter - Professional UI/UX (Best for dashboard) */
+/* font-family: 'Inter', sans-serif; */
+
+/* 3. Montserrat - Strong branding heading */
+/* font-family: 'Montserrat', sans-serif; */
+
+/* 4. Nunito - Rounded educational / soft UI */
+/* font-family: 'Nunito', sans-serif; */
+
+/* 5. Rubik - Rounded modern UI */
+/* font-family: 'Rubik', sans-serif; */
+
+/* 6. Lato - Clean corporate paragraphs */
+/* font-family: 'Lato', sans-serif; */
+
+/* 7. Work Sans - Great readability */
+/* font-family: 'Work Sans', sans-serif; */
+
+/* 8. DM Sans - Geometric smooth style */
+/* font-family: 'DM Sans', sans-serif; */
+
+/* 9. Open Sans - Classic neutral body font */
+/* font-family: 'Open Sans', sans-serif; */
+
+/* 10. Raleway - Elegant thin headings */
+/* font-family: 'Raleway', sans-serif; */
+
 }
+
+
 
 /* ================= COUNSELLING BAR ================= */
 .counselling {
@@ -22,42 +58,47 @@ body {
     top: 0;
     left: 0;
     z-index: 10000;
-    font-size: 12px;
+    font-size: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.counselling span:first-child{
+
+.counselling span:first-child {
     flex: 1;
     text-align: center;
     color: #FFF;
 }
+
 .closeCounselling {
     cursor: pointer;
-    font-size: 14px;
     margin-right: 10px;
-   
+    color: #FFF;
+
 }
-.counselling-button{
+
+.counselling-button {
     padding: 1px 10px;
-    font-size: 8px;
+    font-size: 1.3vh;
     background-color: transparent;
     border-radius: 4px;
     border: 1px solid #fff;
     color: white;
 }
+
 /* ================= NAVBAR ================= */
 .Nav-one {
     position: fixed;
-    top: 0;                   /* default TOP 0 */
+    top: 0;
+    /* default TOP 0 */
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 20px;
+    padding: 15px ;
     background-color: #ffffff;
     z-index: 9999;
     font-size: 1rem;
@@ -65,7 +106,8 @@ body {
 
 /* when counselling bar is visible */
 .nav-with-counselling {
-    top: 20px;                /* pushes navbar down */
+    top: 20px;
+    /* pushes navbar down */
 }
 
 .nav-logo img {
@@ -89,7 +131,8 @@ li {
 .Nav-one li:first-child {
     margin-right: auto;
 }
-.Nav-one li:last-child{
+
+.Nav-one li:last-child {
     margin-left: auto;
 }
 
@@ -106,7 +149,7 @@ li {
 }
 
 .login-btn {
-    background-color:transparent;
+    background-color: transparent;
     border: 2px solid #00D09C;
     color: #000;
 }
@@ -136,7 +179,7 @@ li {
     right: -100%;
     width: 100%;
     height: 100vh;
-    background-color: rgba(255,255,255,0.65);
+    background-color: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(40px);
     z-index: 999;
     flex-direction: column;
@@ -174,52 +217,133 @@ li {
 
 /* MOBILE NAVBAR BTN FIX */
 @media (max-width: 1050px) {
+
     .Nav-one .login-btn,
     .Nav-one .register-btn {
         padding: 10px 16px;
     }
 }
 
-/* ================= MAIN CONTENT ================= */
+
 main {
-    margin-top: 140px; /* counselling + navbar height */
-}
-
-.product-List {
+    margin-top: 160px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: minmax(250px, 550px) 1fr;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-.product-card {
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 12px;
-    border: 1px solid #e3e3e3;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    text-align: center;
-    transition: 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(8px);
-    box-shadow: 0 12px 22px rgba(0,0,0,0.12);
-}
-
-.product-card img {
+.card {
+    position: relative;
     width: 100%;
-    height: 250px;
-    object-fit: contain;
-    margin-bottom: 10px;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    backdrop-filter: blur(8px);
 }
 
-.product-card h2 {
-    font-size: 20px;
-    font-weight: 600;
+.hear {
+    background: linear-gradient(152.24deg, #5367FF 1.16%, #00D09C 100%);
+
+    width: calc(100% - 50px);
+    border-radius: 20px;
+    min-height: 90vh;
+    position: relative;
 }
 
-.product-card p {
-    font-size: 18px;
-    font-weight: 700;
-    color: #D80286;
+.love {
+    position: absolute;
+    width: calc(100% - 50px);
+     min-height: 85vh;
+    background: aqua;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.love img {
+    width: 300px;
+}
+
+.love h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.love p {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #000;
+}
+
+.student {
+    background: #eee;
+    border-radius: 15px;
+    padding: 50px;
+    text-align: center;
+}
+
+@media (max-width: 1050px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .love {
+        padding: 20px;
+    }
+    .love img {
+        width: 60vw;
+    }
+    .love h1 {
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    .love p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 786px) {
+    .hear {
+        width: calc(100% - 30px);
+    }
+    .love {
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+    .love img {
+        width: 55vw;
+    }
+    .love h1 {
+        font-size: 2rem;
+    }
+    .love p {
+        font-size: 1.05rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .love {
+        padding: 15px;
+    }
+    .love img {
+        width: 50vw;
+    }
+    .love h1 {
+        font-size: 1.6rem;
+    }
+    .love p {
+        font-size: 0.9rem;
+        line-height: 1.2;
+    }
 }

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700&family=Rubik:wght@300;400;500;600&family=Lato:wght@300;400;700&family=Work+Sans:wght@300;400;500;600&family=DM+Sans:wght@300;400;500;600&family=Open+Sans:wght@300;400;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
@@ -65,47 +67,14 @@
 </navbar>
 
 </header>
-
-<!-- ================= MAIN CONTENT ================= -->
 <main>
-   
+    <div class="card">
+        <div class="hear"></div>
+        <div class="love">
+            <img src="images/loveToHear.svg" alt="Love To Hear">
+            <h1>Love To Hear You!</h1>
+            <p>When planning to study abroad, there are a housand questions that come to your mind. Will I get through the University of my Dreams? How will I survive the years abroad alone without family? What can I do top my college? How will I sustain the finances? These and a million other uestions are bound to keep your mind occupied. Why you, your parents and family will be equally pondering over a lot of things when it comes to your abroad education plans. These worries and thoughts are endless, but don't let these bother you and your folks. Just speak to us and we will have it sorted, however trivial it may sound.</p>
+        </div>
+    </div>
+    <div class="student">ded</div>
 </main>
-
-<!-- ================= JS ================= -->
-<script>
-/* ==== Position Navbar Correctly On Load ==== */
-window.onload = function () {
-    const counselling = document.querySelector(".counselling");
-    const navbar = document.querySelector(".Nav-one");
-
-    if (counselling && counselling.style.display !== "none") {
-        navbar.classList.add("nav-with-counselling");
-    }
-};
-
-/* ==== Close Counselling Bar ==== */
-function closeCounselling() {
-    document.querySelector(".counselling").style.display = "none";
-    document.querySelector(".Nav-one").classList.remove("nav-with-counselling");
-}
-
-/* ==== Toggle Mobile Menu ==== */
-function toggleMenu() {
-    const sideBar = document.querySelector(".sideBar");
-    const menuIcon = document.getElementById("menuIcon");
-
-    if (sideBar.classList.contains("show")) {
-        sideBar.classList.remove("show");
-        menuIcon.innerHTML = `<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>`;
-    } else {
-        sideBar.classList.add("show");
-        menuIcon.innerHTML = `
-            <path d="m256-200-56-56 224-224-224-224 56-56 
-            224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-        `;
-    }
-}
-</script>
-
-</body>
-</html>
