@@ -258,7 +258,7 @@ main {
 .love {
     position: absolute;
     width: calc(100% - 50px);
-     min-height: 85vh;
+       min-height: 85vh;
     background: rgb(255, 255, 255);
     right: 0;
     display: flex;
@@ -273,11 +273,11 @@ main {
 }
 
 .love img {
-    width: 300px;
+    width: 20vw;
 }
 
 .love h1 {
-    margin-top: 10px;
+    margin-top: 1px;
     font-size: 2rem;
 }
 
@@ -300,6 +300,7 @@ main {
         grid-template-columns: 1fr;
     }
     .love {
+        min-height: 80vw;
         padding: 20px;
     }
     .love img {
