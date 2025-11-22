@@ -49,23 +49,18 @@ body {
 
 }
 
-
-
-/* ================= COUNSELLING BAR ================= */
 .counselling {
     width: 100%;
     height: 28px;
     font-size: 14px;
     background-color: #00D09C;
-    /* padding: 0.09vw; */
     text-align: center;
     color: #000;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10000;
-    /* font-size: 0.8vw; */
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
 
@@ -80,13 +75,7 @@ body {
 .closeCounselling {
     cursor: pointer;
     margin-right: 10px;
-    color: #000000;
-    /* width: 0.5vw; */
-    /* height: 0.5vw; */
-/* border-radius: 50%; */
-    /* background-color: aliceblue; */
-    /* padding: 0.6vw; */
-  display: flex;
+    color: #000000;display: flex;
 align-items: center;
 justify-content: center;
 
@@ -100,13 +89,10 @@ justify-content: center;
     border: 1px solid #fff;
     color: white;
 }
-
-/* ================= NAVBAR ================= */
 .Nav-one {
     position: fixed;
     top: 0vw;
-    /* default TOP 0 */
-    left: 50%;
+     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     display: flex;
@@ -117,11 +103,8 @@ justify-content: center;
     z-index: 9999;
     font-size: 1rem;
 }
-
-/* when counselling bar is visible */
 .nav-with-counselling {
     top: 20px;
-    /* pushes navbar down */
 }
 
 .nav-logo img {
@@ -149,13 +132,9 @@ li {
 .Nav-one li:last-child {
     margin-left: auto;
 }
-
-/* MOBILE – hide menu */
 .Nav-one li:not(.nav-logo):not(.login-btn):not(.register-btn):not(.hamBurger) {
     display: none;
 }
-
-/* ================= LOGIN & REGISTER BUTTONS ================= */
 .button {
     color: #FFF;
     padding: 5px 26px;
@@ -178,15 +157,11 @@ li {
 .Nav-one .register-btn {
     display: none;
 }
-
-/* ================= HAMBURGER ================= */
 .hamBurger {
     cursor: pointer;
     display: block;
     margin-left: 0;
 }
-
-/* ================= SIDEBAR ================= */
 .sideBar {
     position: fixed;
     top: 80px;
@@ -212,8 +187,6 @@ li {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-
-/* ================= DESKTOP ================= */
 @media (min-width: 1050px) {
     .Nav-one li:not(.nav-logo):not(.login-btn):not(.register-btn):not(.hamBurger) {
         display: block;
@@ -228,8 +201,6 @@ li {
         display: block;
     }
 }
-
-/* MOBILE NAVBAR BTN FIX */
 @media (max-width: 1050px) {
 
     .Nav-one .login-btn,
@@ -278,7 +249,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 2vw;
 }
 .love p{
-    font-size: 1vw;
+    font-size: 1.1vw;
     line-height:1.5vw;
 }
 .love::before {
@@ -297,8 +268,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 
 .form-container{
-    /* margin-left: -2vw; */
-    display: flex;
+     display: flex;
     flex-direction: column;
   width: 60vw;
  
@@ -427,7 +397,7 @@ input:focus, select:focus{
     background: #e56c00;
 }
 
-@media (max-width: 926px) {
+@media (max-width: 950px) {
 
 
 main{
@@ -650,7 +620,7 @@ input, select{
 .mileStone .m4::before { background-image: url("images/forum.svg"); }
 
 
-@media (max-width:926px){
+@media (max-width:950px){
     
 .mileStone{
    
@@ -720,5 +690,146 @@ input, select{
     background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+}
+
+
+
+
+.why{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.why h1{
+    font-size: 3vw;
+}
+.universities {
+    display: flex;
+    align-items: center;
+    width: 90vw;       
+    gap: 10vw;          
+}
+
+.universities img{
+    width: 35vw;        /* 🆕 Reduced width for proper proportion */
+    max-width: 100%;    /* 🆕 Responsive */
+    height: auto;       /* 🆕 Maintain ratio */
+}
+
+.universities h2{
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+
+.universities p{
+    font-size: 1.1vw;   /* 🆕 Slightly increased so text won’t shrink too much */
+    line-height: 1.8vw; /* 🆕 Better readability */
+    margin-bottom: 1vw;
+}                     
+
+.universities ul{
+    display: block;
+    line-height: 1vw;
+    list-style: none;
+    padding: 0;
+}
+
+.universities ul li{
+    font-size: 1.1vw;  /* 🆕 Match with paragraph size */
+    display: flex;
+    align-items: center;
+    gap: 0.1vw;        /* 🆕 Better spacing */
+}
+
+.universities ul li img{
+    width: 2.5vw;       /* 🆕 icon correct size */
+}
+
+@media (max-width:1450px) {
+
+  
+.universities h2{
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+
+.universities p{
+    font-size: 1.5vw;   /* 🆕 Slightly increased so text won’t shrink too much */
+    line-height: 1.8vw; /* 🆕 Better readability */
+    margin-bottom: 1vw;
+}  
+.universities ul{
+ 
+    line-height: 0.8vw;
+  
+    padding: 0;
+}
+
+.universities ul li{
+    font-size: 1.3vw;  /* 🆕 Match with paragraph size */
+    
+    gap: 0vw;        /* 🆕 Better spacing */
+}
+}
+
+@media (max-width:950px) {
+
+  
+.universities h2{
+    font-size: 3.2vw;
+    margin-bottom: 1vw;
+}
+
+.universities p{
+    font-size: 2vw;   /* 🆕 Slightly increased so text won’t shrink too much */
+    line-height: 2.5vw; /* 🆕 Better readability */
+    margin-bottom: 1vw;
+}  
+.universities ul{
+ 
+    line-height: 0.8vw;
+  
+    padding: 0;
+}
+
+.universities ul li{
+    font-size: 1.8vw;  /* 🆕 Match with paragraph size */
+    
+    gap: 0vw;        /* 🆕 Better spacing */
+}
+}
+
+@media (max-width:450px) {
+
+.universities img{
+    width:35vw;   
+}
+.universities h2{
+    font-size: 3.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.universities p{
+    font-size: 3vw;   /* 🆕 Slightly increased so text won’t shrink too much */
+    line-height: 3.5vw; /* 🆕 Better readability */
+    margin-bottom: 1.5vw;
+}
+
+.universities ul{
+    display: inline-flex;
+   
+}  
+.universities ul{
+ 
+    line-height: 0.8vw;
+  
+    padding: 0;
+}
+
+.universities ul li{
+    font-size: 2.6vw;  /* 🆕 Match with paragraph size */
+    
+    gap: 0vw;        /* 🆕 Better spacing */
 }
 }
