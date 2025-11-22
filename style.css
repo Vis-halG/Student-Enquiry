@@ -559,42 +559,44 @@ main{
 
 .form-title{
   
-  font-size: 6vw;
+  font-size: 7vw;
+  margin-top: 10vw;
   margin-bottom: 6vw;
   
 }
 
 
 form label{
-  font-size: 3vw;
+  font-size: 3.4vw;
  
 }
 
 input, select{
-   padding: 1.5vw 5px;
-  font-size: 2.5vw;
+   padding: 2vw 5px;
+  font-size: 3vw;
  
 }
 
 .input-row{
  
-  gap: 10px;
-  margin-bottom: 3vw;
+  gap: 5px;
+  margin-bottom: 4vw;
 
 }
 .full{
-  margin-bottom: 3vw;
+  margin-bottom: 4vw;
 }
 
 .checkbox span {
   
-    font-size: 2.5vw;
+    font-size: 3vw;
+    margin-bottom: 1vw;
 }
 
 
 
 .submit-btn{
-    padding: 1vw;
+    padding: 2vw;
    
     font-size: 3vw;
     
