@@ -473,13 +473,11 @@ h3 {
 .google-section {
   padding: 5vw;
   text-align: center;
-  background: #fff;
   
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-}
+   }
 
 /* Row ALWAYS (mobile + desktop) */
 .google-row {
@@ -489,8 +487,13 @@ h3 {
   justify-content: space-between;
   gap: 1rem;
   width: 100%;
-  border: 1px solid #e0e0e0;
   padding: 10px;
+  border-radius: 10px;
+    box-shadow: 
+    0 2px 6px rgba(0, 0, 0, 0.06),
+    0 12px 32px rgba(0, 0, 0, 0.08);
+
+  transition: 0.25s ease;
 }
 
 .google-card {
@@ -530,7 +533,6 @@ h3 {
   font-size: 0.9rem;
 }
 
-/* FIXED SIZE BUTTON LIKE THE IMAGE */
 .google-btn {
   width: 100%;
   height: 48px;
@@ -552,18 +554,18 @@ h3 {
 }
 
 .reviews-wrapper{
+  text-align: left;
 .carousel {
   overflow-x: auto;
-  
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-left: 1.5rem;
   padding-bottom: 1rem;
   scroll-behavior: smooth;
 }
 .carousel::-webkit-scrollbar {
   height: 6px;
+  /* display: none; */
 }
 
 .carousel::-webkit-scrollbar-track {
@@ -592,13 +594,13 @@ h3 {
 
 .card {
   width: 30px;
-  border: 1px solid #e0e0e0;
   background: #fff;
   padding: 1.5rem;
   flex: 0 0 calc(60.3% - 1rem);
-  
+  margin: 10px;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+
 }
 
 @media (min-width: 600px) {
@@ -609,7 +611,7 @@ h3 {
 
 @media (min-width: 1024px) {
   .card {
-    flex: 0 0 calc(78.5% - 1rem);
+    flex: 0 0 calc(61% - 1rem);
   }
 }
 
@@ -655,6 +657,7 @@ h3 {
 
 .stars {
   width: 110px;
+  align-self: center;
 }
 
 .review-text {
