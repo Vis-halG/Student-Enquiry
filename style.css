@@ -811,7 +811,34 @@ h3 {
     font-size: 1rem;
   }
 }
-/* --- FOOTER BASE --- */
+.signUp-section {
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.signUp-section img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.signUp-section img {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 .study-abroad-footer {
   padding: 5vw;
   background: #fff;
