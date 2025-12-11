@@ -476,24 +476,30 @@ select:focus {
 }
 
 .universities ul li {
-  font-size: clamp(0.6rem, 1.2vw, 1.1rem);
+  font-size: clamp(0.8rem, 1.2vw, 1.1rem);
   display: flex;
   align-items: center;
   gap: 0px;
 }
 
 .universities ul li img {
-  width: clamp(35px, 3vw, 48px);
+  width: clamp(55px, 3vw, 48px);
   height: auto;
 }
-
+.why .prefer{
+  margin-top: 10rem;
+}
 .universities .two-ul {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
 }
 
+.universities .two-ul ul{
+  gap: 1rem;
+}
 .universities .two-ul img {
-  width: clamp(25px, 3vw, 24px);
+  width: clamp(35px, 3vw, 24px);
 }
 
 .google-section {
