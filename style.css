@@ -109,6 +109,7 @@ section span:hover::after {
   top: 0;
   left: 0;
   z-index: 10000;
+  padding:3px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
